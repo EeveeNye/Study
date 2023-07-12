@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: DIAL_Tax_Season_Hint
   m_EditorClassIdentifier: 
   lines:
-  - The blacksmith is a really small guy, he must be forging something outside in
-    the village. Find him and bring my money!
+  - "\u94C1\u5320\u4E2A\u5B50\u5F88\u5C0F\uFF0C\u4ED6\u4E00\u5B9A\u662F\u5728\u6751\u5B50\u5916\u9762\u953B\u9020\u4EC0\u4E48\u4E1C\u897F\u3002\u627E\u5230\u4ED6\uFF0C\u628A\u6211\u7684\u94B1\u5E26\u6765\uFF01"
   options: []
+  toExecuteOnCompletion: []

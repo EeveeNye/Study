@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lines:
   - ...
-  - Wow, you are a fast drinker!
+  - "\u54C7\uFF0C\u4F60\u771F\u662F\u4E2A\u9152\u9B3C\uFF01"
   options: []
   toExecuteOnCompletion: []

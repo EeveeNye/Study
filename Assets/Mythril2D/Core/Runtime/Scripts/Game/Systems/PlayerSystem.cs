@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Linq;
+using Sirenix.OdinInspector;
 using UnityEngine;
 
 namespace Gyvr.Mythril2D
@@ -7,20 +8,20 @@ namespace Gyvr.Mythril2D
     [Serializable]
     public struct PlayerDataBlock
     {
-        public GameObject prefab;
-        public int usedPoints;
-        public int experience;
-        public Stats missingCurrentStats;
-        public Stats customStats;
-        public Equipment[] equipments;
-        public AbilitySheet[] equipedAbilities;
-        public Vector3 position;
+        [LabelText("预制体")] public GameObject prefab;
+        [LabelText("已使用点数")] public int usedPoints;
+        [LabelText("经验值")] public int experience;
+        [LabelText("当前缺失属性")] public Stats missingCurrentStats;
+        [LabelText("自定义属性")] public Stats customStats;
+        [LabelText("装备")] public Equipment[] equipments;
+        [LabelText("已装备技能表")] public AbilitySheet[] equipedAbilities;
+        [LabelText("位置")] public Vector3 position;
     }
+
 
     public class PlayerSystem : AGameSystem, IDataBlockHandler<PlayerDataBlock>
     {
-        [Header("Settings")]
-        [SerializeField] private GameObject m_dummyPlayerPrefab = null;
+        [Header("Settings")] [SerializeField] private GameObject m_dummyPlayerPrefab = null;
 
         public Hero PlayerInstance => m_playerInstance;
         public GameObject PlayerPrefab => m_playerPrefab;

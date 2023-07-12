@@ -1,59 +1,69 @@
 using System;
+using Sirenix.OdinInspector;
 
 namespace Gyvr.Mythril2D
 {
+    [LabelText("伤害来源")]
     public enum EDamageSource
     {
-        Character,
-        Unknown
+        [LabelText("角色")] Character,
+        [LabelText("未知")] Unknown
     }
 
     [Flags]
+    [LabelText("伤害标记")]
     public enum EDamageFlag
     {
-        Default = None,
-        None = 0,
-        Critical = 1 << 0,
-        Miss = 1 << 1,
+        [LabelText("默认")] Default = None,
+        [LabelText("无")] None = 0,
+        [LabelText("重击")] Critical = 1 << 0,
+        [LabelText("未命中")] Miss = 1 << 1,
     }
 
+    [LabelText("伤害类型")]
     public enum EDamageType
     {
-        None,
-        Physical,
-        Magical
+        [LabelText("无")] None,
+        [LabelText("物理")] Physical,
+        [LabelText("魔法")] Magical
     }
 
-    /// <summary>
-    /// Damage settings
-    /// </summary>
     [System.Serializable]
     public struct DamageDescriptor
     {
-        public int flatDamages;
-        public int scaledDamages;
-        public float scale;
-        public EDamageType type;
+        [LabelText("数值伤害")] public int flatDamages;
+
+        [LabelText("比例伤害")] public int scaledDamages;
+
+        [LabelText("比例")] public float scale;
+
+        [LabelText("伤害类型")] public EDamageType type;
     }
 
+
     /// <summary>
-    /// Damages output by the attacker after calculations (attack/critical)
+    /// 经过攻击/重击计算后的攻击者输出伤害
     /// </summary>
     public struct DamageOutputDescriptor
     {
-        public EDamageSource source;
-        public object attacker;
-        public int damage;
-        public EDamageType type;
-        public EDamageFlag flags;
+        [LabelText("伤害来源")] public EDamageSource source;
+
+        [LabelText("攻击者")] public object attacker;
+
+        [LabelText("伤害")] public int damage;
+
+        [LabelText("伤害类型")] public EDamageType type;
+
+        [LabelText("伤害标记")] public EDamageFlag flags;
     }
 
     /// <summary>
-    /// Damages received by the target after mitigation (defense/miss)
+    /// 目标经过减免（防御/未命中）后接收的伤害
     /// </summary>
     public struct DamageInputDescriptor
     {
-        public int damage;
-        public EDamageFlag flags;
+        [LabelText("伤害")] public int damage;
+
+        [LabelText("伤害标记")] public EDamageFlag flags;
     }
 }

@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: ITEM_Iron_Gloves
   m_EditorClassIdentifier: 
   m_icon: {fileID: 1297661249, guid: 8ace1fb331206454aa908061100d1519, type: 3}
-  m_displayName: Iron Gloves
-  m_description: Simple gloves made out of iron
+  m_displayName: "\u94C1\u624B\u5957"
+  m_description: "\u7B80\u5355\u7684\u94C1\u5236\u624B\u5957"
   m_price: 50
   m_equipAudio: {fileID: 11400000, guid: 9fa8803b447617b48b9981e6b61432a2, type: 2}
   m_unequipAudio: {fileID: 11400000, guid: 8201d83c769713b43808c98daf34f505, type: 2}

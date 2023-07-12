@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: DIAL_Inn_Offer
   m_EditorClassIdentifier: 
   lines:
-  - Welcome to the Drunk Rat Inn! Would you like to drink a restorative drink for
-    only {0} <currency>?
+  - "\u6B22\u8FCE\u5149\u4E34\u9189\u9F20\u5BA2\u6808\uFF01\u4F60\u60F3\u559D\u4E00\u676F\u53EA\u9700{0}
+    <currency>\u7684\u8865\u54C1\u996E\u6599\u5417\uFF1F"
   options:
   - name: Accept
     sequence: {fileID: 11400000, guid: b67aff0e202c3ef4395eb23cd0b88e50, type: 2}

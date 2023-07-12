@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: DIAL_Well
   m_EditorClassIdentifier: 
   lines:
-  - Well well well...
+  - "\u597D \u597D \u597D ..."
   options: []
+  toExecuteOnCompletion: []

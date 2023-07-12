@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: AB_Punch
   m_EditorClassIdentifier: 
   m_icon: {fileID: -173424555, guid: 75f26bff82aa90b4e8ac81457a1224bf, type: 3}
-  m_displayName: Punch
-  m_description: A basic attack, that is better than doing nothing
+  m_displayName: "\u62F3\u51FB"
+  m_description: "\u4E00\u6B21\u57FA\u672C\u7684\u653B\u51FB\uFF0C\u603B\u6BD4\u4EC0\u4E48\u90FD\u4E0D\u505A\u8981\u597D"
   m_prefab: {fileID: 758787801704857827, guid: 76f569ed198834552b32d5ba2da3617f, type: 3}
   m_manaCost: 0
   m_canInterupt: 0

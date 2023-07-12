@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: ITEM_Slime_Juice
   m_EditorClassIdentifier: 
   m_icon: {fileID: 1257703560, guid: b2aa333e2a0687c499a8b4ecb8625997, type: 3}
-  m_displayName: Slime Juice
-  m_description: Viscous and viridescent, this juice is distilled from the remains
-    of slimes and fetches a hefty price
+  m_displayName: "\u7C98\u6DB2\u6C41"
+  m_description: "\u8FD9\u79CD\u679C\u6C41\u5177\u6709\u7C98\u6027\u548C\u7EFF\u8272\uFF0C\u662F\u4ECE\u7C98\u6DB2\u6B8B\u7559\u7269\u4E2D\u84B8\u998F\u51FA\u6765\u7684\uFF0C\u4EF7\u683C\u4E0D\u83F2\u3002"
   m_price: 200

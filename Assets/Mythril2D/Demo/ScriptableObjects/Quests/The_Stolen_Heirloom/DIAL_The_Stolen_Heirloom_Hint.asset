@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: DIAL_The_Stolen_Heirloom_Hint
   m_EditorClassIdentifier: 
   lines:
-  - All I know is that a horde of skeletons took my mother's necklace, they must
-    be somewhere outside of the village.
+  - "\u6211\u6240\u77E5\u9053\u7684\u662F\uFF0C\u4E00\u7FA4\u9AB7\u9AC5\u62FF\u8D70\u4E86\u6211\u6BCD\u4EB2\u7684\u9879\u94FE\uFF0C\u4ED6\u4EEC\u4E00\u5B9A\u5728\u6751\u5B50\u5916\u7684\u67D0\u4E2A\u5730\u65B9\u3002"
   options: []
+  toExecuteOnCompletion: []

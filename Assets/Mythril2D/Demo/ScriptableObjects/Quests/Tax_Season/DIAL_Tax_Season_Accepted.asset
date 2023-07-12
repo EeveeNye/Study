@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: DIAL_Tax_Season_Accepted
   m_EditorClassIdentifier: 
   lines:
-  - I knew it! Maybe I could give you a position in my office, you are a truly great
-    person, when it comes to my own interest of course.
+  - "\u6211\u5C31\u77E5\u9053\uFF01\u4E5F\u8BB8\u6211\u53EF\u4EE5\u5728\u6211\u7684\u529E\u516C\u5BA4\u7ED9\u4F60\u4E00\u4E2A\u804C\u4F4D\uFF0C\u4F60\u662F\u4E00\u4E2A\u771F\u6B63\u4F1F\u5927\u7684\u4EBA\uFF0C\u5F53\u7136\uFF0C\u5F53\u6D89\u53CA\u5230\u6211\u81EA\u5DF1\u7684\u5229\u76CA\u65F6\u3002"
   options: []
+  toExecuteOnCompletion: []

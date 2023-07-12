@@ -13,10 +13,9 @@ MonoBehaviour:
   m_Name: DIAL_Necromancy_In_The_Vicinity_Offer
   m_EditorClassIdentifier: 
   lines:
-  - Oh, an adventurer! I need your help. A terror has been spreading chaos in our
-    town.
-  - Several of my fellow citizens reported getting attacked by a necromancer.
-  - Would you be able to rid our land of this evil?
+  - "\u54E6\uFF0C\u4E00\u4E2A\u5192\u9669\u5BB6\uFF01\u6211\u9700\u8981\u4F60\u7684\u5E2E\u52A9\u3002\u4E00\u573A\u6050\u6016\u4E8B\u4EF6\u5728\u6211\u4EEC\u9547\u4E0A\u8513\u5EF6\u7740\u6DF7\u4E71\u3002"
+  - "\u6211\u7684\u51E0\u4E2A\u540C\u80DE\u62A5\u544A\u8BF4\u906D\u5230\u4E86\u6B7B\u7075\u6CD5\u5E08\u7684\u88AD\u51FB\u3002"
+  - "\u4F60\u80FD\u8BA9\u6211\u4EEC\u7684\u571F\u5730\u6446\u8131\u8FD9\u79CD\u90AA\u6076\u5417\uFF1F"
   options:
   - name: For sure!
     sequence: {fileID: 11400000, guid: 9112a65fd70642547b05826d46b36db4, type: 2}
@@ -28,3 +27,4 @@ MonoBehaviour:
     message:
       type: 3
       customMessage: 
+  toExecuteOnCompletion: []

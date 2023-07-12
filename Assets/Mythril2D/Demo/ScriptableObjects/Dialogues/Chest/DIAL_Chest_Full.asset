@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: DIAL_Chest_Full
   m_EditorClassIdentifier: 
   lines:
-  - You found {0}!
+  - "\u60A8\u627E\u5230\u4E86 {0}!"
   options: []
+  toExecuteOnCompletion: []

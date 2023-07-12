@@ -13,11 +13,10 @@ MonoBehaviour:
   m_Name: DIAL_The_Stolen_Heirloom_Offer
   m_EditorClassIdentifier: 
   lines:
-  - You seem really brave, I beg you to help me.
-  - My mother had willed me a necklace before she passed away.
-  - But a horde of evil skeletons stole it from her lifeless body. I need to get
-    it back from them.
-  - Can you help me save my mother's legacy?
+  - "\u4F60\u770B\u8D77\u6765\u771F\u7684\u5F88\u52C7\u6562\uFF0C\u6211\u6C42\u4F60\u5E2E\u5E2E\u6211\u3002"
+  - "\u6211\u6BCD\u4EB2\u53BB\u4E16\u524D\u66FE\u9057\u5631\u7ED9\u6211\u4E00\u6761\u9879\u94FE\u3002"
+  - "\u4F46\u4E00\u7FA4\u90AA\u6076\u7684\u9AB7\u9AC5\u4ECE\u5979\u6BEB\u65E0\u751F\u547D\u7684\u8EAB\u4F53\u91CC\u5077\u8D70\u4E86\u5B83\u3002\u6211\u8981\u4ECE\u4ED6\u4EEC\u90A3\u91CC\u62FF\u56DE\u6765\u3002"
+  - "\u4F60\u80FD\u5E2E\u6211\u633D\u6551\u6211\u6BCD\u4EB2\u7684\u9057\u4EA7\u5417\uFF1F"
   options:
   - name: I will!
     sequence: {fileID: 11400000, guid: 94df3924659fa88428db599e01765b73, type: 2}
@@ -29,3 +28,4 @@ MonoBehaviour:
     message:
       type: 3
       customMessage: 
+  toExecuteOnCompletion: []

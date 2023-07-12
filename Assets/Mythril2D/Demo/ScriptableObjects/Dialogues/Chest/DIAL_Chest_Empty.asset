@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: DIAL_Chest_Empty
   m_EditorClassIdentifier: 
   lines:
-  - This chest is empty...
+  - "\u8FD9\u4E2A\u7BB1\u5B50\u662F\u7A7A\u7684..\u3002"
   options: []
+  toExecuteOnCompletion: []

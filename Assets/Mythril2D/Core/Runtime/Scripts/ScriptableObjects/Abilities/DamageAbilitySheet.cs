@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using Sirenix.OdinInspector;
 using UnityEngine;
 
 namespace Gyvr.Mythril2D
@@ -6,8 +7,8 @@ namespace Gyvr.Mythril2D
     [CreateAssetMenu(menuName = AssetMenuIndexer.Mythril2D_Abilities + nameof(DamageAbilitySheet))]
     public class DamageAbilitySheet : AbilitySheet
     {
-        [Header("Damage Ability Settings")]
-        [SerializeField] private DamageDescriptor m_damageDescriptor;
+        [Header("伤害能力设置")] [SerializeField, LabelText("伤害设置")]
+        private DamageDescriptor m_damageDescriptor;
 
         public DamageDescriptor damageDescriptor => m_damageDescriptor;
 

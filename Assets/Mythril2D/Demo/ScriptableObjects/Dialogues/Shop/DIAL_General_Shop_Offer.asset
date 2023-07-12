@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: DIAL_General_Shop_Offer
   m_EditorClassIdentifier: 
   lines:
-  - Oy fellow traveler! I'm Alphonse, and this is my general store.
-  - I might have some good stuff for you, want to take a look?
+  - " \u55E8\uFF0C\u65C5\u884C\u8005\uFF01\u6211\u662F\u963F\u65B9\u65AF\uFF08Alphonse\uFF09\uFF0C\u8FD9\u91CC\u662F\u6211\u7684\u6742\u8D27\u5E97\u3002"
+  - "\u6211\u6709\u4E00\u4E9B\u597D\u4E1C\u897F\u7ED9\u4F60\uFF0C\u60F3\u770B\u770B\u5417\uFF1F"
   options:
   - name: Shop
     sequence: {fileID: 0}

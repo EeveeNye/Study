@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: DIAL_Trapdoor
   m_EditorClassIdentifier: 
   lines:
-  - It's locked. It would have been fun to explore the cave.
+  - "\u9501\u4E0A\u4E86\u3002\u53BB\u6D1E\u7A74\u63A2\u9669\u4E00\u5B9A\u5F88\u6709\u8DA3\u3002"
   options: []
+  toExecuteOnCompletion: []

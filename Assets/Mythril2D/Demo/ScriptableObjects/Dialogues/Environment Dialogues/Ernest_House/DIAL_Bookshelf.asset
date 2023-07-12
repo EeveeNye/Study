@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: DIAL_Bookshelf
   m_EditorClassIdentifier: 
   lines:
-  - That's a lot of books. Who has time for that?
+  - "\u90A3\u53EF\u662F\u5F88\u591A\u4E66\u554A\u3002\u8C01\u6709\u65F6\u95F4\u8BFB\u90A3\u4E48\u591A\u5462\uFF1F"
   options: []
+  toExecuteOnCompletion: []

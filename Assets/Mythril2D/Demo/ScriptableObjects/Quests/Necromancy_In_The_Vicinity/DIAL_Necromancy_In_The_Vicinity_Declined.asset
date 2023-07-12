@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: DIAL_Necromancy_In_The_Vicinity_Declined
   m_EditorClassIdentifier: 
   lines:
-  - That's too bad. I hope someone will do something about it.
+  - "\u592A\u4E0D\u5E78\u4E86\u3002\u6211\u5E0C\u671B\u6709\u4EBA\u80FD\u5BF9\u6B64\u505A\u70B9\u4EC0\u4E48\u3002"
   options: []
+  toExecuteOnCompletion: []

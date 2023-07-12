@@ -12,9 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: edfe15e0f88eb4a43a3565753407a5b3, type: 3}
   m_Name: QUEST_The_Stolen_Heirloom
   m_EditorClassIdentifier: 
-  m_title: The Stolen Heirloom
-  m_description: Ernest was supposed to receive his mother's necklace after she passed
-    away, but it got stolen by monsters and is now lost.
+  m_title: "\u88AB\u76D7\u7684\u4F20\u5BB6\u5B9D"
+  m_description: "\u6B27\u5185\u65AF\u7279\u672C\u5E94\u5728\u6BCD\u4EB2\u53BB\u4E16\u540E\u6536\u5230\u5979\u7684\u9879\u94FE\uFF0C\u4F46\u5B83\u88AB\u602A\u7269\u5077\u8D70\u4E86\uFF0C\u73B0\u5728\u4E0D\u89C1\u4E86\u3002"
   m_recommendedLevel: 2
   m_repeatable: 0
   m_tasks:

@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: DIAL_Tomb
   m_EditorClassIdentifier: 
   lines:
-  - It's my dad's stone. I miss him.
+  - "\u8FD9\u662F\u6211\u7238\u7238\u7684\u5B9D\u77F3\u3002\u6211\u5F88\u60F3\u4ED6\u3002"
   options: []
+  toExecuteOnCompletion: []

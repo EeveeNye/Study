@@ -13,12 +13,13 @@ MonoBehaviour:
   m_Name: AB_Corosion
   m_EditorClassIdentifier: 
   m_icon: {fileID: 0}
-  m_displayName: Corrosion
-  m_description: Burns anything on contact
+  m_displayName: "\u8150\u8680"
+  m_description: "\u70E7\u6BC1\u4EFB\u4F55\u63A5\u89E6\u5230\u7684\u4E1C\u897F"
   m_prefab: {fileID: 5434529868547144446, guid: 76944e717ca96af4fa1ab458037d4425, type: 3}
   m_manaCost: 0
   m_canInterupt: 0
   m_disabledActionsWhileCasting: 0
+  m_fireAudio: {fileID: 0}
   m_damageDescriptor:
     flatDamages: 0
     scaledDamages: 0

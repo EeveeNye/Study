@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: DIAL_Ladder
   m_EditorClassIdentifier: 
   lines:
-  - I have no clue how to use a ladder, that was not part of the school curriculum.
+  - "\u6211\u4E0D\u77E5\u9053\u5982\u4F55\u4F7F\u7528\u68AF\u5B50\uFF0C\u90A3\u4E0D\u662F\u5B66\u6821\u8BFE\u7A0B\u7684\u4E00\u90E8\u5206\u3002"
   options: []
+  toExecuteOnCompletion: []

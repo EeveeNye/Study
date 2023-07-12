@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: ITEM_Family_Necklace
   m_EditorClassIdentifier: 
   m_icon: {fileID: -106448770, guid: 8ace1fb331206454aa908061100d1519, type: 3}
-  m_displayName: Family Necklace
-  m_description: A shiny necklace that belongs to Ernest's family
+  m_displayName: "\u9879\u94FE"
+  m_description: "\u5C5E\u4E8E\u6B27\u5185\u65AF\u7279\u5BB6\u65CF\u7684\u4E00\u6761\u95EA\u4EAE\u7684\u9879\u94FE"
   m_price: 0

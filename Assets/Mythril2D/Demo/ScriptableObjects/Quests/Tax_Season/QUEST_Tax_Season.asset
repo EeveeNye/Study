@@ -12,9 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: edfe15e0f88eb4a43a3565753407a5b3, type: 3}
   m_Name: QUEST_Tax_Season
   m_EditorClassIdentifier: 
-  m_title: Tax Season
-  m_description: Yosbar the blacksmith didn't pay his taxes, the king needs you to
-    use all possible means to make him pay.
+  m_title: "\u7EB3\u7A0E\u5B63\u8282"
+  m_description: "\u94C1\u5320\u7EA6\u65AF\u5DF4\u6CA1\u6709\u4EA4\u7A0E\uFF0C\u56FD\u738B\u9700\u8981\u4F60\u7528\u4E00\u5207\u53EF\u80FD\u7684\u624B\u6BB5\u8BA9\u4ED6\u4EA4\u7A0E\u3002"
   m_recommendedLevel: 1
   m_repeatable: 0
   m_tasks:

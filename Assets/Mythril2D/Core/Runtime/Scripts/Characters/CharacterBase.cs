@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using Sirenix.OdinInspector;
 using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.Events;
@@ -8,9 +9,9 @@ namespace Gyvr.Mythril2D
 {
     public enum EAlignment
     {
-        Good,
-        Evil,
-        Neutral,
+        [LabelText("善良")] Good,
+        [LabelText("邪恶")] Evil,
+        [LabelText("中立")] Neutral,
         Default = Neutral
     }
 
@@ -18,16 +19,16 @@ namespace Gyvr.Mythril2D
     public enum EActionFlags
     {
         None = 0,
-        Move = 1,
-        Interact = 2,
-        UseAbility = 4,
+        [LabelText("移动")] Move = 1,
+        [LabelText("互动")] Interact = 2,
+        [LabelText("使用能力")] UseAbility = 4,
         All = ~0
     }
 
     public enum EMovementMode
     {
-        Bidirectional,
-        Polydirectional
+        [LabelText("双向")] Bidirectional,
+        [LabelText("多向")] Polydirectional
     }
 
     public enum EDirection
@@ -45,26 +46,29 @@ namespace Gyvr.Mythril2D
 
     public abstract class CharacterBase : MonoBehaviour
     {
-        [Header("References")]
-        [SerializeField] protected Animator m_animator = null;
+        [Header("References")] [SerializeField]
+        protected Animator m_animator = null;
+
         [SerializeField] private Rigidbody2D m_rigidbody = null;
         [SerializeField] private SpriteRenderer m_spriteRenderer = null;
 
-        [Header("General Settings")]
-        [Range(Stats.MinLevel, Stats.MaxLevel)]
-        [SerializeField] protected int m_level = Stats.MinLevel;
+        [Header("General Settings")] [Range(Stats.MinLevel, Stats.MaxLevel)] [SerializeField]
+        protected int m_level = Stats.MinLevel;
+
         [SerializeField] private bool m_invincibleOnHit = false;
         [SerializeField] private Transform m_abilitiesRoot = null;
         [SerializeField] private AbilitySheet[] m_additionalAbilities = null;
 
-        [Header("Movement Settings")]
-        [SerializeField] private float m_moveSpeed = 4.0f;
+        [Header("Movement Settings")] [SerializeField]
+        private float m_moveSpeed = 4.0f;
+
         [SerializeField] private float m_pushIntensityScale = 1.0f;
         [SerializeField] private float m_pushResistanceScale = 1.0f;
         [SerializeField] private EMovementMode m_movementMode = EMovementMode.Bidirectional;
 
-        [Header("Animation Parameters")]
-        [SerializeField] private string m_hitAnimationParameter = "hit";
+        [Header("Animation Parameters")] [SerializeField]
+        private string m_hitAnimationParameter = "hit";
+
         [SerializeField] private string m_deathAnimationParameter = "death";
         [SerializeField] private string m_invincibleAnimationParameter = "invincible";
         [SerializeField] private string m_moveXAnimationParameter = "moveX";
@@ -81,7 +85,10 @@ namespace Gyvr.Mythril2D
         public abstract CharacterSheet characterSheet { get; }
         public bool dead => m_currentStats[EStat.Health] == 0;
         public int level => m_level;
-        public bool invincible => characterSheet.alignment == EAlignment.Neutral || m_invincibleAnimationPlaying || dead;
+
+        public bool invincible =>
+            characterSheet.alignment == EAlignment.Neutral || m_invincibleAnimationPlaying || dead;
+
         public Stats currentStats => m_currentStats.stats;
         public Stats stats => m_stats.stats;
         public UnityEvent currentStatsChanged => m_currentStats.changed;
@@ -95,7 +102,10 @@ namespace Gyvr.Mythril2D
         private bool m_hasInvincibleAnimation = false;
         private bool m_invincibleAnimationPlaying = false;
         private Dictionary<AbilitySheet, int> m_abilities = new Dictionary<AbilitySheet, int>();
-        private Dictionary<AbilitySheet, AbilityBase> m_abilitiesInstances = new Dictionary<AbilitySheet, AbilityBase>();
+
+        private Dictionary<AbilitySheet, AbilityBase>
+            m_abilitiesInstances = new Dictionary<AbilitySheet, AbilityBase>();
+
         private HashSet<ITriggerableAbility> m_triggerableAbilities = new HashSet<ITriggerableAbility>();
         protected ObservableStats m_currentStats = new ObservableStats();
         protected ObservableStats m_stats = new ObservableStats();
@@ -149,7 +159,8 @@ namespace Gyvr.Mythril2D
 
         private void InitializeAbilities()
         {
-            IEnumerable<AbilitySheet> characterSpecificAvailableAbilities = characterSheet.GetAvailableAbilitiesAtLevel(m_level);
+            IEnumerable<AbilitySheet> characterSpecificAvailableAbilities =
+                characterSheet.GetAvailableAbilitiesAtLevel(m_level);
 
             foreach (AbilitySheet ability in characterSpecificAvailableAbilities)
             {
@@ -221,7 +232,9 @@ namespace Gyvr.Mythril2D
             GameObject instance = Instantiate(sheet.prefab, m_abilitiesRoot);
             instance.name = sheet.displayName;
             AbilityBase ability = instance.GetComponent<AbilityBase>();
-            Debug.AssertFormat(ability, "The provided ability prefab doesn't have a behaviour of type {0} attached to its root", typeof(AbilityBase).Name);
+            Debug.AssertFormat(ability,
+                "The provided ability prefab doesn't have a behaviour of type {0} attached to its root",
+                typeof(AbilityBase).Name);
             ability.Init(this, sheet);
 
             // Active abilities need to be activated
@@ -414,7 +427,7 @@ namespace Gyvr.Mythril2D
                 Array.ForEach(colliders, (collider) => collider.enabled = false);
             }
         }
-        
+
         protected virtual void OnDeath()
         {
             Destroy(gameObject);
@@ -452,6 +465,7 @@ namespace Gyvr.Mythril2D
         }
 
         #region Movement
+
         // TODO: Make prettier
         private void FixedUpdate()
         {
@@ -556,9 +570,11 @@ namespace Gyvr.Mythril2D
                 // Check for potential collisions
                 int count = m_rigidbody.Cast(
                     direction, // X and Y values between -1 and 1 that represent the direction from the body to look for collisions
-                    GameManager.Config.collisionContactFilter, // The settings that determine where a collision can occur on such as layers to collide with
+                    GameManager.Config
+                        .collisionContactFilter, // The settings that determine where a collision can occur on such as layers to collide with
                     m_castCollisions, // List of collisions to store the found collisions into after the Cast is finished
-                    speed * Time.fixedDeltaTime + Constants.CollisionOffset); // The amount to cast equal to the movement plus an offset
+                    speed * Time.fixedDeltaTime +
+                    Constants.CollisionOffset); // The amount to cast equal to the movement plus an offset
 
                 if (count == 0)
                 {
@@ -583,7 +599,8 @@ namespace Gyvr.Mythril2D
             return m_pushIntensityScale > 0.0f;
         }
 
-        public void Push(Vector2 direction, float intensity = 5.0f, float resistance = 10.0f, bool faceOppositeDirection = false)
+        public void Push(Vector2 direction, float intensity = 5.0f, float resistance = 10.0f,
+            bool faceOppositeDirection = false)
         {
             if (IsPushable())
             {
@@ -603,6 +620,7 @@ namespace Gyvr.Mythril2D
                 SetLookAtDirection(directionToFace > 0 ? EDirection.Right : EDirection.Left);
             }
         }
+
         #endregion
     }
 }

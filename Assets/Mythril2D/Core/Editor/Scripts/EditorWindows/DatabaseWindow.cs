@@ -27,6 +27,26 @@ namespace Gyvr.Mythril2D
             typeof(GameConfig) // 游戏配置
         };
 
+        // 定义要显示的选项卡的类型数组和对应的中文名称
+        private static readonly (Type Type, string Name)[] TabsName =
+        {
+            (typeof(HeroSheet), "英雄数据表"),
+            (typeof(MonsterSheet), "怪物数据表"),
+            (typeof(NPCSheet), "NPC数据表"),
+            (typeof(AbilitySheet), "技能数据表"),
+            (typeof(Item), "物品"),
+            (typeof(Shop), "商店"),
+            (typeof(Inn), "客栈"),
+            (typeof(Quest), "任务"),
+            (typeof(DialogueSequence), "对话序列"),
+            (typeof(ScriptableAction), "脚本动作"),
+            (typeof(AudioClipResolver), "音频列表"),
+            (typeof(SaveFile), "存档文件"),
+            (typeof(NavigationCursorStyle), "导航光标样式"),
+            (typeof(GameConfig), "游戏配置")
+        };
+
+
         private static int _selectedTab = 0; // 当前选中的选项卡的索引
         private static int _selectedIndex = -1; // 当前选中的ScriptableObject的索引
         private static Vector2 _scrollPos; // 滚动视图的位置
@@ -85,7 +105,8 @@ namespace Gyvr.Mythril2D
 
             var previousSelectedTab = _selectedTab;
             // 显示选项卡，可以选择不同的选项卡
-            _selectedTab = GUILayout.SelectionGrid(_selectedTab, Tabs.Select(t => t.Name).ToArray(), 1);
+            // _selectedTab = GUILayout.SelectionGrid(_selectedTab, Tabs.Select(t => t.Name).ToArray(), 1);
+            _selectedTab = GUILayout.SelectionGrid(_selectedTab, TabsName.Select(t => t.Name).ToArray(), 1);
 
             EditorGUILayout.EndVertical();
             EditorGUILayout.BeginVertical();
@@ -101,10 +122,17 @@ namespace Gyvr.Mythril2D
                 _selectedIndex = -1;
             }
 
+            // // 创建一个与所选选项卡匹配的ScriptableObject名称的数组
+            // var visibleScriptableObjects = _scriptableObjects
+            //     .Where(so => Tabs[_selectedTab].IsAssignableFrom(so.GetType()) && so.name.Contains(_searchString))
+            //     .OrderBy(so => so.name);
+
             // 创建一个与所选选项卡匹配的ScriptableObject名称的数组
             var visibleScriptableObjects = _scriptableObjects
-                .Where(so => Tabs[_selectedTab].IsAssignableFrom(so.GetType()) && so.name.Contains(_searchString))
+                .Where(so =>
+                    TabsName[_selectedTab].Type.IsAssignableFrom(so.GetType()) && so.name.Contains(_searchString))
                 .OrderBy(so => so.name);
+
 
             var names = visibleScriptableObjects.Select(so => so.name).ToArray();
 

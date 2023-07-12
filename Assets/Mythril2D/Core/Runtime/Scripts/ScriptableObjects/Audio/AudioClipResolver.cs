@@ -1,26 +1,29 @@
-﻿using UnityEngine;
+﻿using Sirenix.OdinInspector;
+using UnityEngine;
 
 namespace Gyvr.Mythril2D
 {
     public enum EAudioClipResolvingAlgorithm
     {
-        First,
-        Random,
-        Loop,
-        PingPong
+        [LabelText("单次")] First,
+        [LabelText("随机")] Random,
+        [LabelText("循环")] Loop,
+        [LabelText("来回")] PingPong
     }
+
 
     [CreateAssetMenu(menuName = AssetMenuIndexer.Mythril2D_Audio + nameof(AudioClipResolver))]
     public class AudioClipResolver : ScriptableObject
     {
-        [SerializeField] private AudioClip[] m_audioClips = null;
-        [SerializeField] private EAudioChannel m_targetChannel;
-        [SerializeField] private EAudioClipResolvingAlgorithm m_resolvingAlgorithm;
+        [SerializeField] [LabelText("音频")] private AudioClip[] m_audioClips = null;
+        [SerializeField] [LabelText("音频类型")] private EAudioChannel m_targetChannel;
+        [SerializeField] [LabelText("调用方法")] private EAudioClipResolvingAlgorithm m_resolvingAlgorithm;
 
         private int m_currentIndex = 0;
         private int m_increment = 1;
 
         public EAudioChannel targetChannel => m_targetChannel;
+
 
         public AudioClip GetClip()
         {

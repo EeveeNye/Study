@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: DIAL_Shop_Cannot_Sell
   m_EditorClassIdentifier: 
   lines:
-  - '{0} could be really useful, I shouldn''t sell it!'
+  - "{0} \u53EF\u80FD\u771F\u7684\u5F88\u6709\u7528\uFF0C\u6211\u4E0D\u5E94\u8BE5\u5356\u5B83\uFF01"
   options: []
   toExecuteOnCompletion: []

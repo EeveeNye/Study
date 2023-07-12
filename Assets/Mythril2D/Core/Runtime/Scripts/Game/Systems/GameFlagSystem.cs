@@ -1,13 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
+using Sirenix.OdinInspector;
 
 namespace Gyvr.Mythril2D
 {
     [Serializable]
     public struct GameFlagsDataBlock
     {
-        public string[] flags;
+        [LabelText("游戏标记")] public string[] flags;
     }
+
 
     public class GameFlagSystem : AGameSystem, IDataBlockHandler<GameFlagsDataBlock>
     {

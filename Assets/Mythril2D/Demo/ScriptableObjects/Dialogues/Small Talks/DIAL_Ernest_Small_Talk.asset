@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: DIAL_Ernest_Small_Talk
   m_EditorClassIdentifier: 
   lines:
-  - We need more good people like you in town. All we have are monsters and peasants.
+  - "\u6211\u4EEC\u9547\u4E0A\u9700\u8981\u66F4\u591A\u50CF\u4F60\u8FD9\u6837\u7684\u597D\u4EBA\u3002\u6211\u4EEC\u6240\u62E5\u6709\u7684\u53EA\u6709\u602A\u7269\u548C\u519C\u6C11\u3002"
   options: []
+  toExecuteOnCompletion: []

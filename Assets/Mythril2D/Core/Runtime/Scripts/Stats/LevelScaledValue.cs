@@ -1,13 +1,17 @@
 ﻿using System;
+using Sirenix.OdinInspector;
 using UnityEngine;
 
 namespace Gyvr.Mythril2D
 {
     public abstract class LevelScaledValue<T>
     {
-        [SerializeField] protected T m_initialValue;
-        [SerializeField] private AnimationCurve m_evolutionProfile = AnimationCurve.Linear(0.0f, 0.0f, 1.0f, 1.0f);
-        [SerializeField] private float m_evolutionScale = 1.0f;
+        [SerializeField] [LabelText("初始值")] protected T m_initialValue;
+
+        [SerializeField] [LabelText("增长曲线")]
+        private AnimationCurve m_evolutionProfile = AnimationCurve.Linear(0.0f, 0.0f, 1.0f, 1.0f);
+
+        [SerializeField] [LabelText("增长单位")] private float m_evolutionScale = 1.0f;
 
         public T this[int level]
         {

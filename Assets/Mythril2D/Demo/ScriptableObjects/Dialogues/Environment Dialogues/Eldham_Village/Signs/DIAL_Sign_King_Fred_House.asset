@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: DIAL_Sign_King_Fred_House
   m_EditorClassIdentifier: 
   lines:
-  - King Fred's house
+  - "\u5F17\u96F7\u5FB7\u56FD\u738B\u7684\u623F\u5B50"
   options: []
   toExecuteOnCompletion: []

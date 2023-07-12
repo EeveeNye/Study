@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: ITEM_Tax_Payment
   m_EditorClassIdentifier: 
   m_icon: {fileID: 416732651, guid: fd2aecd1af34986489ae2b6e9c2501b8, type: 3}
-  m_displayName: Tax Payment
-  m_description: A gold purse collected from the blacksmith for tax purposes
+  m_displayName: "\u7EB3\u7A0E\u888B"
+  m_description: " \u4E3A\u4E86\u7EB3\u7A0E\u76EE\u7684\u800C\u4ECE\u94C1\u5320\u90A3\u91CC\u6536\u96C6\u7684\u4E00\u4E2A\u91D1\u94B1\u888B\u3002"
   m_price: 0

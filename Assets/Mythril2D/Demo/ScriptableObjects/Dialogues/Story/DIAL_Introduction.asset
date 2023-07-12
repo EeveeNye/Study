@@ -15,10 +15,10 @@ MonoBehaviour:
   lines:
   - ...
   - ......
-  - As I slowly rise from my snooze,
-  - I'm greeted by unfamiliar views,
-  - In an abandoned house, I'm confused,
-  - Was I searching for treasure, or just some good booze?
+  - "\u5F53\u6211\u6162\u6162\u4ECE\u7761\u68A6\u4E2D\u9192\u6765\u65F6\uFF0C"
+  - "\u8FCE\u63A5\u6211\u7684\u662F\u964C\u751F\u7684\u666F\u8272\uFF0C"
+  - "\u5728\u5E9F\u5F03\u7684\u623F\u5B50\u91CC\uFF0C\u6211\u5F88\u56F0\u60D1\uFF0C"
+  - "\u6211\u662F\u5728\u5BFB\u627E\u5B9D\u85CF\uFF0C\u8FD8\u662F\u53EA\u662F\u5728\u627E\u7F8E\u9152\uFF1F"
   options: []
   toExecuteOnCompletion:
   - action: {fileID: 11400000, guid: 357186adf88f47441beed107c9dbbe69, type: 2}

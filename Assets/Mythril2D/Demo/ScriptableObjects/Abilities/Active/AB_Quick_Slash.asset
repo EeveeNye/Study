@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: AB_Quick_Slash
   m_EditorClassIdentifier: 
   m_icon: {fileID: 488604305, guid: 75f26bff82aa90b4e8ac81457a1224bf, type: 3}
-  m_displayName: Quick Slash
-  m_description: A quick and efficient slash
+  m_displayName: "\u5FEB\u901F\u65A9\u51FB"
+  m_description: "\u5FEB\u901F\u800C\u6709\u6548\u7684\u5927\u780D"
   m_prefab: {fileID: 491574258212556329, guid: ab159b6b8fcdc09468b7aac4f6b2ece6, type: 3}
   m_manaCost: 0
   m_canInterupt: 0

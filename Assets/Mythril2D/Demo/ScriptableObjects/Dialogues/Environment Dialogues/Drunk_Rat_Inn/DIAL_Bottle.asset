@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: DIAL_Bottle
   m_EditorClassIdentifier: 
   lines:
-  - Someone left without finishing their bottle. That makes no sense.
+  - "\u6709\u4EBA\u79BB\u5F00\u5374\u6CA1\u6709\u559D\u5B8C\u4ED6\u4EEC\u7684\u74F6\u5B50\u3002\u8FD9\u6CA1\u6709\u4EFB\u4F55\u610F\u4E49\u3002"
   options: []
+  toExecuteOnCompletion: []

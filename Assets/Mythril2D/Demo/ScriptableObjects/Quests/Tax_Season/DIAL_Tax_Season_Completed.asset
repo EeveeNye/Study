@@ -13,8 +13,7 @@ MonoBehaviour:
   m_Name: DIAL_Tax_Season_Completed
   m_EditorClassIdentifier: 
   lines:
-  - Very impressive! Maybe if I collect enough tax money I would be able to renovate
-    my house. In the meantime, please take this share of the profits.
-  - I know what you think, a king living in a simple house is not very cool, but
-    you gotta start somewhere.
+  - "\u975E\u5E38\u4EE4\u4EBA\u5370\u8C61\u6DF1\u523B\uFF01\u4E5F\u8BB8\u5982\u679C\u6211\u6536\u591F\u4E86\u7A0E\u91D1\uFF0C\u6211\u5C31\u80FD\u7FFB\u65B0\u6211\u7684\u623F\u5B50\u4E86\u3002\u5728\u6B64\u671F\u95F4\uFF0C\u8BF7\u62FF\u8D70\u8FD9\u90E8\u5206\u5229\u6DA6\u3002"
+  - "\u6211\u77E5\u9053\u4F60\u600E\u4E48\u60F3\uFF0C\u4E00\u4E2A\u56FD\u738B\u4F4F\u5728\u7B80\u6734\u7684\u623F\u5B50\u91CC\u4E0D\u662F\u5F88\u9177\uFF0C\u4F46\u4F60\u5FC5\u987B\u4ECE\u67D0\u4E2A\u5730\u65B9\u5F00\u59CB\u3002"
   options: []
+  toExecuteOnCompletion: []

@@ -1,17 +1,18 @@
 using UnityEditor;
 using UnityEngine;
+using Sirenix.OdinInspector.Editor;
 
 namespace Gyvr.Mythril2D
 {
     [CustomEditor(typeof(HeroSheet))]
-    public class HeroSheetEditor : Editor
+    public class HeroSheetEditor : OdinEditor
     {
         private int m_previewLevel = 1;
 
         public int GetTotalExperienceRequired(HeroSheet sheet, int level)
         {
             return level > 0 ? sheet.experience[level] + GetTotalExperienceRequired(sheet, level - 1) : 0;
-        }    
+        }
 
         public override void OnInspectorGUI()
         {
@@ -21,16 +22,16 @@ namespace Gyvr.Mythril2D
 
             EditorGUILayout.Separator();
 
-            EditorGUILayout.LabelField("Evolution Preview", EditorStyles.boldLabel);
+            EditorGUILayout.LabelField("等级预览", EditorStyles.boldLabel); // Evolution Preview
 
-            m_previewLevel = EditorGUILayout.IntSlider("Level", m_previewLevel, Stats.MinLevel, Stats.MaxLevel);
+            m_previewLevel = EditorGUILayout.IntSlider("等级", m_previewLevel, Stats.MinLevel, Stats.MaxLevel); // Level
 
             int experienceRequired = sheet.experience[m_previewLevel];
             int experienceRequiredTotal = GetTotalExperienceRequired(sheet, m_previewLevel);
 
             GUI.enabled = false;
-            EditorGUILayout.IntField("Experience Required", experienceRequired);
-            EditorGUILayout.IntField("Experience Required Total", experienceRequiredTotal);
+            EditorGUILayout.IntField("所需经验", experienceRequired); // Experience Required
+            EditorGUILayout.IntField("总计所需经验", experienceRequiredTotal); // Experience Required Total
             GUI.enabled = true;
         }
     }

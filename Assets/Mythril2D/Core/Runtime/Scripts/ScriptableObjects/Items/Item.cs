@@ -1,3 +1,4 @@
+using Sirenix.OdinInspector;
 using UnityEngine;
 
 namespace Gyvr.Mythril2D
@@ -11,11 +12,12 @@ namespace Gyvr.Mythril2D
     [CreateAssetMenu(menuName = AssetMenuIndexer.Mythril2D_Items + nameof(Item))]
     public class Item : ScriptableObject, INameable
     {
-        [Header("General")]
-        [SerializeField] private Sprite m_icon = null;
-        [SerializeField] private string m_displayName = string.Empty;
-        [SerializeField] private string m_description = string.Empty;
-        [SerializeField] private int m_price = 50;
+        [Header("基础属性")] [SerializeField] [LabelText("图标")]
+        private Sprite m_icon = null;
+
+        [SerializeField] [LabelText("显示名")] private string m_displayName = string.Empty;
+        [SerializeField] [LabelText("描述")] private string m_description = string.Empty;
+        [SerializeField] [LabelText("价格")] private int m_price = 50;
 
         public virtual void Use(CharacterBase target, EItemLocation location)
         {

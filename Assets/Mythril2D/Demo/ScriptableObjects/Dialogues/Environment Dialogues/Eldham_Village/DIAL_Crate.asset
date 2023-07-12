@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: DIAL_Crate
   m_EditorClassIdentifier: 
   lines:
-  - It's empty, a monster must have stripped it.
+  - "\u5B83\u662F\u7A7A\u7684\uFF0C\u4E00\u5B9A\u662F\u602A\u7269\u628A\u5B83\u62FF\u8D70\u4E86\u3002"
   options: []
+  toExecuteOnCompletion: []

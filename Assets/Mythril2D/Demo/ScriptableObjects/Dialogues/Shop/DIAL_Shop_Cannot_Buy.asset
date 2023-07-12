@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: DIAL_Shop_Cannot_Buy
   m_EditorClassIdentifier: 
   lines:
-  - This {0} is too expensive for me at the moment!
+  - "\u6B64 {0} \u76EE\u524D\u5BF9\u6211\u6765\u8BF4\u592A\u8D35\u4E86\uFF01"
   options: []
   toExecuteOnCompletion: []

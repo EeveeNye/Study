@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: DIAL_The_Stolen_Heirloom_Declined
   m_EditorClassIdentifier: 
   lines:
-  - I cannot go there myself, I don't even know how to fight...
+  - "\u6211\u4E0D\u80FD\u4EB2\u81EA\u53BB\u90A3\u91CC\uFF0C\u6211\u751A\u81F3\u4E0D\u77E5\u9053\u600E\u4E48\u6253\u4ED7\u3002"
   options: []
+  toExecuteOnCompletion: []

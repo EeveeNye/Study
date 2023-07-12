@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: DIAL_Tax_Season_Yosbar_2_B_Cut_Beard
   m_EditorClassIdentifier: 
   lines:
-  - What are you doing??? Are you trying to cut my beard??? That's absurd! Please
-    don't, it took meyears to grow!
+  - "\u4F60\u5728\u505A\u4EC0\u4E48\uFF1F\u4F60\u60F3\u526A\u6389\u6211\u7684\u80E1\u5B50\u5417\uFF1F\u8FD9\u592A\u8352\u8C2C\u4E86\uFF01\u8BF7\u4E0D\u8981\uFF0C\u6211\u82B1\u4E86\u5F88\u591A\u5E74\u624D\u957F\u51FA\u6765\u7684\uFF01"
   options:
   - name: 
     sequence: {fileID: 11400000, guid: 4fa56d5fafa34c94aa412797e316d731, type: 2}
     message:
       type: 0
       customMessage: 
+  toExecuteOnCompletion: []

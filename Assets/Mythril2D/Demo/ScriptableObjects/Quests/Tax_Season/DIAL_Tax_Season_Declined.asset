@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: DIAL_Tax_Season_Declined
   m_EditorClassIdentifier: 
   lines:
-  - That's not nice. I'm the king, the blacksmith should serve the king, and so should
-    you!
+  - "\u8FD9\u53EF\u4E0D\u597D\u3002\u6211\u662F\u56FD\u738B\uFF0C\u94C1\u5320\u5E94\u8BE5\u4E3A\u56FD\u738B\u670D\u52A1\uFF0C\u4F60\u4E5F\u5E94\u8BE5\uFF01"
   options: []
+  toExecuteOnCompletion: []

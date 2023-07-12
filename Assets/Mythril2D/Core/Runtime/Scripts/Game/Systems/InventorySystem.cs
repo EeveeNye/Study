@@ -1,4 +1,5 @@
 using System;
+using Sirenix.OdinInspector;
 using Unity.Mathematics;
 using UnityEngine;
 
@@ -7,8 +8,8 @@ namespace Gyvr.Mythril2D
     [Serializable]
     public struct InventoryDataBlock
     {
-        public int money;
-        public SerializableDictionary<Item, int> items;
+        [LabelText("金钱")] public int money;
+        [LabelText("物品")] public SerializableDictionary<Item, int> items;
     }
 
     public class InventorySystem : AGameSystem, IDataBlockHandler<InventoryDataBlock>

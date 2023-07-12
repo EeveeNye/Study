@@ -1,13 +1,13 @@
 ﻿using System;
 using UnityEditor;
-using UnityEngine;
+using Sirenix.OdinInspector.Editor;
 
 namespace Gyvr.Mythril2D
 {
     // TODO: Remove, not necessary anymore
     // TODO: 移除，不再需要
     [CustomEditor(typeof(AbilitySheet), true)]
-    public class AbilitySheetEditor : Editor
+    public class AbilitySheetEditor : OdinEditor
     {
         // 显示消息框
         private void ShowMessage(MessageType type, string message, params object[] args)

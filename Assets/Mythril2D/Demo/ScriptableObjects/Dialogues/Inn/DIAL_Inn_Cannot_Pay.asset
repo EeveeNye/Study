@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: DIAL_Inn_Cannot_Pay
   m_EditorClassIdentifier: 
   lines:
-  - I'm afarid your lean pruse is not gonna be enough. Come back when you have more
-    <currency>.
+  - "\u6211\u60F3\u4F60\u7684\u7626\u8EAB\u672C\u9886\u662F\u4E0D\u591F\u7684\u3002\u5F53\u4F60\u6709\u66F4\u591A\u7684<currency>\u65F6\u518D\u6765\u3002"
   options: []
   toExecuteOnCompletion: []

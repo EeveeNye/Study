@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: ITEM_Mana_Potion
   m_EditorClassIdentifier: 
   m_icon: {fileID: 1110923219, guid: b2aa333e2a0687c499a8b4ecb8625997, type: 3}
-  m_displayName: Mana Potion
-  m_description: Restores 5 <mana> points
+  m_displayName: "\u9B54\u529B\u836F\u6C34"
+  m_description: "\u6062\u590D5 <mana> \u70B9"
   m_price: 50
   m_manaToRestore: 5
   m_drinkAudio: {fileID: 11400000, guid: 6169e1eb2a9a87640a3b43f31e3ab758, type: 2}

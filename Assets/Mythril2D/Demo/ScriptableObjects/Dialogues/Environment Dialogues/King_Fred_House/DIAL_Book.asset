@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: DIAL_Book
   m_EditorClassIdentifier: 
   lines:
-  - If only I knew how to read.
+  - "\u8981\u662F\u6211\u77E5\u9053\u5982\u4F55\u9605\u8BFB\u5C31\u597D\u4E86\u3002"
   options: []
+  toExecuteOnCompletion: []

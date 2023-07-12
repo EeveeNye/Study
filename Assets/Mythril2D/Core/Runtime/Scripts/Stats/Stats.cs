@@ -1,4 +1,5 @@
 using System;
+using Sirenix.OdinInspector;
 using Unity.Mathematics;
 using UnityEngine;
 
@@ -6,14 +7,21 @@ namespace Gyvr.Mythril2D
 {
     public enum EStat
     {
-        Health = 0,
-        Mana = 1,
-        PhysicalAttack = 2,
-        MagicalAttack = 3,
-        PhysicalDefense = 4,
-        MagicalDefense = 5,
-        Agility = 6,
-        Luck = 7
+        [LabelText("生命值")] Health = 0,
+
+        [LabelText("法力值")] Mana = 1,
+
+        [LabelText("物理攻击力")] PhysicalAttack = 2,
+
+        [LabelText("魔法攻击力")] MagicalAttack = 3,
+
+        [LabelText("物理防御力")] PhysicalDefense = 4,
+
+        [LabelText("魔法防御力")] MagicalDefense = 5,
+
+        [LabelText("敏捷")] Agility = 6,
+
+        [LabelText("运气")] Luck = 7
     }
 
     [Serializable]

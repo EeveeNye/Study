@@ -1,3 +1,4 @@
+using Sirenix.OdinInspector;
 using Unity.Mathematics;
 using UnityEngine;
 
@@ -12,9 +13,9 @@ namespace Gyvr.Mythril2D
     [CreateAssetMenu(menuName = AssetMenuIndexer.Mythril2D_Shops + nameof(Shop))]
     public class Shop : ScriptableObject
     {
-        public Item[] items = null;
-        public float sellingPriceMultiplier = 0.5f;
-        public float buyingPriceMultiplier = 1.0f;
+        [LabelText("物品")] public Item[] items = null;
+        [LabelText("销售价格乘数")] public float sellingPriceMultiplier = 0.5f;
+        [LabelText("买入价格乘数")] public float buyingPriceMultiplier = 1.0f;
 
         public int GetPrice(Item item, ETransactionType transaction)
         {

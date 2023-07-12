@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: DIAL_Furnace
   m_EditorClassIdentifier: 
   lines:
-  - Running this furnace with charcoal is not very eco-friendly.
+  - "\u7528\u6728\u70AD\u64CD\u4F5C\u8FD9\u4E2A\u7089\u5B50\u4E0D\u592A\u73AF\u4FDD\u3002"
   options: []
+  toExecuteOnCompletion: []

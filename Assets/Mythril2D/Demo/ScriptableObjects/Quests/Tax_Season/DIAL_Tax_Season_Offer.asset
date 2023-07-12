@@ -13,12 +13,9 @@ MonoBehaviour:
   m_Name: DIAL_Tax_Season_Offer
   m_EditorClassIdentifier: 
   lines:
-  - Thanks again for getting rid of this necromancer! Now that this threat is gone,
-    I can focus on building our town's wealth again.
-  - Speaking of, Yosbar the blacksmith still hasn't paid his taxes yet, I could use
-    a little convincing from a strong character like you.
-  - Would you mind visiting Yosbar and get this money from him? Don't worry, he is
-    well off.
+  - "\u518D\u6B21\u611F\u8C22\u4F60\u9664\u6389\u4E86\u8FD9\u4E2A\u6B7B\u7075\u6CD5\u5E08\uFF01\u73B0\u5728\u8FD9\u79CD\u5A01\u80C1\u6D88\u5931\u4E86\uFF0C\u6211\u53EF\u4EE5\u4E13\u6CE8\u4E8E\u518D\u6B21\u5EFA\u7ACB\u6211\u4EEC\u5C0F\u9547\u7684\u8D22\u5BCC\u3002"
+  - "\u8BF4\u5230\u8FD9\uFF0C\u94C1\u5320\u7EA6\u65AF\u5DF4\u8FD8\u6CA1\u4EA4\u7A0E\u5462\uFF0C\u50CF\u4F60\u8FD9\u6837\u575A\u5F3A\u7684\u4EBA\uFF0C\u6211\u53EF\u4EE5\u7ED9\u4ED6\u4E00\u70B9\u8BF4\u670D\u529B\u3002"
+  - "\u4F60\u4ECB\u610F\u53BB\u62DC\u8BBFYosbar\u5E76\u4ECE\u4ED6\u90A3\u91CC\u62FF\u5230\u8FD9\u7B14\u94B1\u5417\uFF1F\u522B\u62C5\u5FC3\uFF0C\u4ED6\u5F88\u6709\u94B1\u3002"
   options:
   - name: For sure!
     sequence: {fileID: 11400000, guid: 1d62427ff9fa04d4e93c383fa0c58019, type: 2}

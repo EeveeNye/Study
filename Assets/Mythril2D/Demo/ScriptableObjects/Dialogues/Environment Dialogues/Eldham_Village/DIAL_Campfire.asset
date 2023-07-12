@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: DIAL_Campfire
   m_EditorClassIdentifier: 
   lines:
-  - This reminds me of my childhood, going to camp and singing around the fire at
-    night.
+  - "\u8FD9\u8BA9\u6211\u60F3\u8D77\u4E86\u6211\u7684\u7AE5\u5E74\uFF0C\u53BB\u8425\u5730\uFF0C\u5728\u591C\u665A\u56F4\u7740\u7BDD\u706B\u5531\u6B4C\u7684\u65F6\u5149\u3002"
   options: []
+  toExecuteOnCompletion: []

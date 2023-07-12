@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: ITEM_Iron_Sword
   m_EditorClassIdentifier: 
   m_icon: {fileID: 984255214, guid: 2bce3f279b3e7f240b759d22cae23314, type: 3}
-  m_displayName: Iron Sword
-  m_description: Simple sword made out of iron
+  m_displayName: "\u94C1\u5251"
+  m_description: "\u7B80\u5355\u7684\u94C1\u5236\u5251"
   m_price: 50
   m_equipAudio: {fileID: 11400000, guid: 9fa8803b447617b48b9981e6b61432a2, type: 2}
   m_unequipAudio: {fileID: 11400000, guid: 8201d83c769713b43808c98daf34f505, type: 2}

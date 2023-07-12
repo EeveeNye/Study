@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using Sirenix.OdinInspector;
 using UnityEngine;
 
 namespace Gyvr.Mythril2D
@@ -8,16 +9,16 @@ namespace Gyvr.Mythril2D
     [Serializable]
     public struct JournalDataBlock
     {
-        public List<Quest> availableQuests;
-        public List<QuestInstanceDataBlock> activeQuests;
-        public List<Quest> fullfilledQuests;
-        public List<Quest> completedQuests;
+        [LabelText("可接取任务")] public List<Quest> availableQuests;
+        [LabelText("进行中任务")] public List<QuestInstanceDataBlock> activeQuests;
+        [LabelText("已完成任务")] public List<Quest> fullfilledQuests;
+        [LabelText("已完成任务")] public List<Quest> completedQuests;
     }
+
 
     public class JournalSystem : AGameSystem, IDataBlockHandler<JournalDataBlock>
     {
-        [Header("Audio")]
-        [SerializeField] private AudioClipResolver m_questStartedSound;
+        [Header("Audio")] [SerializeField] private AudioClipResolver m_questStartedSound;
         [SerializeField] private AudioClipResolver m_questCompletedSound;
 
         public List<Quest> availableQuests => m_availableQuests;
@@ -26,7 +27,10 @@ namespace Gyvr.Mythril2D
         public List<Quest> completedQuests => m_completedQuests;
 
         public bool IsQuestAvailable(Quest quest) => availableQuests.Contains(quest);
-        public bool IsQuestActive(Quest quest) => m_activeQuests.Find((QuestInstance questInstance) => questInstance.quest == quest) != null;
+
+        public bool IsQuestActive(Quest quest) =>
+            m_activeQuests.Find((QuestInstance questInstance) => questInstance.quest == quest) != null;
+
         public bool HasFullfilledQuest(Quest quest) => fullfilledQuests.Contains(quest);
         public bool HasCompletedQuest(Quest quest) => completedQuests.Contains(quest);
 

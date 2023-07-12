@@ -1,15 +1,17 @@
-﻿using UnityEngine;
+﻿using Sirenix.OdinInspector;
+using UnityEngine;
 
 namespace Gyvr.Mythril2D
 {
     public enum EAudioChannel
     {
-        BackgroundMusic,
-        BackgroundSound,
-        InterfaceSoundFX,
-        GameplaySoundFX,
-        Miscellaneous
+        [LabelText("背景音乐")] BackgroundMusic,
+        [LabelText("背景音效")] BackgroundSound,
+        [LabelText("界面音效")] InterfaceSoundFX,
+        [LabelText("游戏音效")] GameplaySoundFX,
+        [LabelText("其他")] Miscellaneous
     }
+
 
     public class AudioSystem : AGameSystem
     {
@@ -27,7 +29,8 @@ namespace Gyvr.Mythril2D
 
         private void DispatchAudioPlaybackRequest(AudioClipResolver audioClipResolver)
         {
-            if (audioClipResolver && m_audioChannels.TryGetValue(audioClipResolver.targetChannel, out AudioChannel channel))
+            if (audioClipResolver &&
+                m_audioChannels.TryGetValue(audioClipResolver.targetChannel, out AudioChannel channel))
             {
                 channel.Play(audioClipResolver);
             }

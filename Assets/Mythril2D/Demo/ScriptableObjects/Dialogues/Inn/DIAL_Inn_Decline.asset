@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: DIAL_Inn_Decline
   m_EditorClassIdentifier: 
   lines:
-  - No worries, have a wonderful day!
+  - "\u522B\u62C5\u5FC3\uFF0C\u795D\u4F60\u6709\u7F8E\u597D\u7684\u4E00\u5929\uFF01"
   options: []
   toExecuteOnCompletion: []

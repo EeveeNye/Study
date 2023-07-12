@@ -13,10 +13,11 @@ MonoBehaviour:
   m_Name: DIAL_Tax_Season_Yosbar_2_A_Burn_Beard
   m_EditorClassIdentifier: 
   lines:
-  - Burning my beard??? Are you nuts??? Are you trying to kill me or what?
+  - "\u70E7\u6389\u6211\u7684\u80E1\u5B50\uFF1F\u4F60\u75AF\u4E86\u5417\uFF1F\u4F60\u662F\u60F3\u6740\u4E86\u6211\u8FD8\u662F\u600E\u4E48\u7684\uFF1F"
   options:
   - name: 
     sequence: {fileID: 11400000, guid: 4fa56d5fafa34c94aa412797e316d731, type: 2}
     message:
       type: 0
       customMessage: 
+  toExecuteOnCompletion: []

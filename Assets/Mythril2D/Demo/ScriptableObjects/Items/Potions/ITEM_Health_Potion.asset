@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: ITEM_Health_Potion
   m_EditorClassIdentifier: 
   m_icon: {fileID: -1227757721, guid: b2aa333e2a0687c499a8b4ecb8625997, type: 3}
-  m_displayName: Health Potion
-  m_description: Restores 5 <health> points
+  m_displayName: "\u4F53\u529B\u836F\u6C34"
+  m_description: "\u6062\u590D5\u4E2A <health> \u70B9"
   m_price: 50
   m_healthToRestore: 5
   m_drinkAudio: {fileID: 11400000, guid: 6169e1eb2a9a87640a3b43f31e3ab758, type: 2}

@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: DIAL_King_Small_Talk
   m_EditorClassIdentifier: 
   lines:
-  - Being a king is nice, you tell people what to do, you collect taxes, and you
-    sleep well!
+  - "\u5F53\u56FD\u738B\u5F88\u597D\uFF0C\u4F60\u544A\u8BC9\u4EBA\u4EEC\u8BE5\u505A\u4EC0\u4E48\uFF0C\u4F60\u6536\u7A0E\uFF0C\u4F60\u7761\u5F97\u597D\uFF01"
   options: []
+  toExecuteOnCompletion: []

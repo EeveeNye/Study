@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: DIAL_Sign_Ernest_House
   m_EditorClassIdentifier: 
   lines:
-  - Ernest's House
+  - "\u6B27\u5185\u65AF\u7279\u7684\u623F\u5B50"
   options: []
   toExecuteOnCompletion: []

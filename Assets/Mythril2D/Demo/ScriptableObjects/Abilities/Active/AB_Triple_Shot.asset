@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: AB_Triple_Shot
   m_EditorClassIdentifier: 
   m_icon: {fileID: -1733940927, guid: 75f26bff82aa90b4e8ac81457a1224bf, type: 3}
-  m_displayName: Triple Short
-  m_description: Throw 3 arrows in a cone, but does slightly less damages per arrow
+  m_displayName: "\u4E09\u8FDE\u77ED\u51FB"
+  m_description: "\u5728\u5706\u9525\u4F53\u4E2D\u6295\u63B73\u652F\u7BAD\uFF0C\u4F46\u6BCF\u652F\u7BAD\u9020\u6210\u7684\u4F24\u5BB3\u7565\u4F4E\u3002"
   m_prefab: {fileID: 7041185181918867506, guid: 17c8dfd7408d5ad4f9755371ded29e70, type: 3}
   m_manaCost: 1
   m_canInterupt: 1

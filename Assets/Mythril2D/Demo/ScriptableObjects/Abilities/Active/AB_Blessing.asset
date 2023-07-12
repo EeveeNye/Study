@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: AB_Blessing
   m_EditorClassIdentifier: 
   m_icon: {fileID: -664805317, guid: 75f26bff82aa90b4e8ac81457a1224bf, type: 3}
-  m_displayName: Blessing
-  m_description: Slightly heals the caster
+  m_displayName: "\u795D\u798F"
+  m_description: "\u8F7B\u5FAE\u6CBB\u7597\u65BD\u6CD5\u8005"
   m_prefab: {fileID: 5637492867466869810, guid: da6d7810d900aad439350f0bdbfe42a8, type: 3}
   m_manaCost: 1
   m_canInterupt: 1

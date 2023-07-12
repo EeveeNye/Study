@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: AB_Baton_Stroke
   m_EditorClassIdentifier: 
   m_icon: {fileID: -428931625, guid: 75f26bff82aa90b4e8ac81457a1224bf, type: 3}
-  m_displayName: Baton Stroke
-  m_description: A simple yet effective attack with a staff
+  m_displayName: "\u68CD\u68D2\u51FB\u6253"
+  m_description: "\u7528\u68CD\u5B50\u8FDB\u884C\u7B80\u5355\u800C\u6709\u6548\u7684\u653B\u51FB"
   m_prefab: {fileID: 7884856398598054234, guid: 5d4b52437ff2c4b409c1a29b2427fb67, type: 3}
   m_manaCost: 0
   m_canInterupt: 0

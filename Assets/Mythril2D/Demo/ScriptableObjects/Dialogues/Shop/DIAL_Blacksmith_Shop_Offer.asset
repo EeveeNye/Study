@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: DIAL_Blacksmith_Shop_Offer
   m_EditorClassIdentifier: 
   lines:
-  - I might be small, but I can forge big weapons. Look at what I have in store!
+  - "\u6211\u53EF\u80FD\u5F88\u5C0F\uFF0C\u4F46\u6211\u53EF\u4EE5\u953B\u9020\u5927\u6B66\u5668\u3002\u770B\u770B\u6211\u7684\u5E97\u91CC\u90FD\u6709\u4EC0\u4E48\uFF01"
   options:
   - name: Shop
     sequence: {fileID: 0}
@@ -25,3 +25,4 @@ MonoBehaviour:
     message:
       type: 3
       customMessage: 
+  toExecuteOnCompletion: []

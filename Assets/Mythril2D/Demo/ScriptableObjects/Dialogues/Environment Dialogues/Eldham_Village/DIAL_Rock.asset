@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: DIAL_Rock
   m_EditorClassIdentifier: 
   lines:
-  - This is a beautiful rock, maybe it's would be worth it to try and resell it.
+  - "\u8FD9\u662F\u4E00\u5757\u5F88\u6F02\u4EAE\u7684\u77F3\u5934\uFF0C\u4E5F\u8BB8\u503C\u5F97\u8BD5\u7740\u8F6C\u5356\u3002"
   options: []
+  toExecuteOnCompletion: []

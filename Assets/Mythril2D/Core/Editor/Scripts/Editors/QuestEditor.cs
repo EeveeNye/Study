@@ -1,9 +1,10 @@
 ﻿using UnityEditor;
+using Sirenix.OdinInspector.Editor;
 
 namespace Gyvr.Mythril2D
 {
     [CustomEditor(typeof(Quest))]
-    public class QuestEditor : Editor
+    public class QuestEditor : OdinEditor
     {
         public override void OnInspectorGUI()
         {
@@ -14,7 +15,9 @@ namespace Gyvr.Mythril2D
             if (!IsQuestOfferDialogueValid(quest.questOfferDialogue))
             {
                 EditorGUILayout.Space();
-                EditorGUILayout.HelpBox(string.Format("The quest offer DialogueSequence has no option sending the expected [{0}] message. The quest may have no way to get accepted by the player.", EDialogueMessageType.Accept), MessageType.Warning);
+                EditorGUILayout.HelpBox(
+                    string.Format("Quest Offer DialogueSequence没有发送预期[{0}]消息的选项。这项任务可能无法被玩家接收。",
+                        EDialogueMessageType.Accept), MessageType.Warning);
             }
         }
 

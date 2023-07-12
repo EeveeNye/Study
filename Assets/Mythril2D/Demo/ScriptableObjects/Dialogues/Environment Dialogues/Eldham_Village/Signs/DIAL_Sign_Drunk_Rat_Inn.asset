@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: DIAL_Sign_Drunk_Rat_Inn
   m_EditorClassIdentifier: 
   lines:
-  - 'Drunk Rat''s Inn: Rest or drink to your heart''s content'
+  - "\u9189\u9F20\u5BA2\u6808\uFF1A\u5C3D\u60C5\u4F11\u606F\u6216\u7545\u996E"
   options: []
   toExecuteOnCompletion: []

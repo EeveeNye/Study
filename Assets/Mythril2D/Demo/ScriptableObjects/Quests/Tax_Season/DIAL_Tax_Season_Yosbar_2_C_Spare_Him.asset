@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: DIAL_Tax_Season_Yosbar_2_C_Spare_Him
   m_EditorClassIdentifier: 
   lines:
-  - I knew you were not a monster. Thank you! Now, back to work.
+  - "\u6211\u5C31\u77E5\u9053\u4F60\u4E0D\u662F\u602A\u7269\u3002\u8C22\u8C22!\u73B0\u5728\uFF0C\u56DE\u53BB\u5DE5\u4F5C\u5427\u3002"
   options: []
   toExecuteOnCompletion: []

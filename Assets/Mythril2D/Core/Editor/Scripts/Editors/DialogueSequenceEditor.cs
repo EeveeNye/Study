@@ -1,10 +1,11 @@
 using UnityEditor;
 using UnityEngine;
+using Sirenix.OdinInspector.Editor;
 
 namespace Gyvr.Mythril2D
 {
     [CustomEditor(typeof(DialogueSequence))]
-    public class DialogueSequenceEditor : Editor
+    public class DialogueSequenceEditor : OdinEditor
     {
         // Private Members
         private SerializedProperty m_lines;
@@ -20,18 +21,20 @@ namespace Gyvr.Mythril2D
 
         public override void OnInspectorGUI()
         {
-            EditorGUILayout.PropertyField(m_lines);
-            EditorGUILayout.Separator();
-            m_options.arraySize = EditorGUILayout.IntSlider("Option Count", m_options.arraySize, 0, 3);
-
-            for (int i = 0; i < m_options.arraySize; ++i)
-            {
-                DisplayOption(i, m_options.arraySize == 1);
-            }
-            EditorGUILayout.Separator();
-            EditorGUILayout.PropertyField(m_toExecuteOnCompletion);
-
-            serializedObject.ApplyModifiedProperties();
+            base.OnInspectorGUI();
+            // EditorGUILayout.PropertyField(m_lines);
+            // EditorGUILayout.Separator();
+            // m_options.arraySize = EditorGUILayout.IntSlider("Option Count", m_options.arraySize, 0, 3);
+            //
+            // for (int i = 0; i < m_options.arraySize; ++i)
+            // {
+            //     DisplayOption(i, m_options.arraySize == 1);
+            // }
+            //
+            // EditorGUILayout.Separator();
+            // EditorGUILayout.PropertyField(m_toExecuteOnCompletion);
+            //
+            // serializedObject.ApplyModifiedProperties();
         }
 
         private void DisplayOption(int index, bool hideOptionName)

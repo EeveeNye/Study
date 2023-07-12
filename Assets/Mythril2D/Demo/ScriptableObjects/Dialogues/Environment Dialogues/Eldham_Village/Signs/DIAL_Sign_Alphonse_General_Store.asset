@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: DIAL_Sign_Alphonse_General_Store
   m_EditorClassIdentifier: 
   lines:
-  - 'Alphonse General Store: The perfect goods for true adventurers'
+  - "\u963F\u65B9\u65AF\u6742\u8D27\u5E97\uFF1A\u771F\u6B63\u5192\u9669\u5BB6\u7684\u5B8C\u7F8E\u5546\u54C1"
   options: []
   toExecuteOnCompletion: []

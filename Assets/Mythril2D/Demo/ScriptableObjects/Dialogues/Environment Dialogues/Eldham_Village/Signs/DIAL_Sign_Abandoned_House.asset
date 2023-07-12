@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: DIAL_Sign_Abandoned_House
   m_EditorClassIdentifier: 
   lines:
-  - For sale
+  - "\u5F85\u552E"
   options: []
   toExecuteOnCompletion: []
