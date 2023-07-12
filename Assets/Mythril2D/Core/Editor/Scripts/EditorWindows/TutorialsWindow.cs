@@ -347,33 +347,33 @@ namespace Gyvr.Mythril2D
     {
         public ITutorial[] m_tutorials = new ITutorial[]
         {
-            new TutorialGettingStarted(),
-            new TutorialScenes(),
-            new TutorialTilemapLayers(),
-            new TutorialChests(),
-            new TutorialTeleporters(),
-            new TutorialStats(),
-            new TutorialCharacterCreation(),
-            new TutorialHeroes(),
-            new TutorialNPCs(),
-            new TutorialMonsters(),
-            new TutorialAbilities(),
-            new TutorialShopsAndInns(),
-            new TutorialItems(),
-            new TutorialQuests(),
-            new TutorialDialogues(),
-            new TutorialAudio(),
-            new TutorialScriptableAction(),
-            new TutorialGameFlags(),
-            new TutorialDatabase(),
-            new TutorialGameManager(),
-            new TutorialGameSystems(),
-            new TutorialNavigationCursors(),
-            new TutorialConditionalActivators(),
+            new TutorialGettingStarted(), // 入门教程
+            new TutorialScenes(), // 场景教程
+            new TutorialTilemapLayers(), // 瓦片地图层教程
+            new TutorialChests(), // 宝箱教程
+            new TutorialTeleporters(), // 传送门教程
+            new TutorialStats(), // 属性教程
+            new TutorialCharacterCreation(), // 角色创建教程
+            new TutorialHeroes(), // 英雄教程
+            new TutorialNPCs(), // NPC教程
+            new TutorialMonsters(), // 怪物教程
+            new TutorialAbilities(), // 技能教程
+            new TutorialShopsAndInns(), // 商店和客栈教程
+            new TutorialItems(), // 物品教程
+            new TutorialQuests(), // 任务教程
+            new TutorialDialogues(), // 对话教程
+            new TutorialAudio(), // 音频教程
+            new TutorialScriptableAction(), // 脚本动作教程
+            new TutorialGameFlags(), // 游戏标记教程
+            new TutorialDatabase(), // 数据库教程
+            new TutorialGameManager(), // 游戏管理器教程
+            new TutorialGameSystems(), // 游戏系统教程
+            new TutorialNavigationCursors(), // 导航光标教程
+            new TutorialConditionalActivators(), // 条件激活器教程
         };
 
-        private int m_selectedTab = 0;
-        private Vector2 m_scrollPosition;
+        private int m_selectedTab = 0; // 当前选中的选项卡的索引
+        private Vector2 m_scrollPosition; // 滚动视图的位置
 
         [MenuItem("Window/Mythril2D/Tutorials")]
         public static void ShowWindow()
@@ -387,11 +387,11 @@ namespace Gyvr.Mythril2D
         {
             ITutorial tutorial = m_tutorials[index];
             string content = string.Empty;
-            content += $"<color=#FFC300><size=18><b>{tutorial.Title}</b></size></color>\n";
-            content += $"<i>{tutorial.Description}</i>\n";
+            content += $"<color=#FFC300><size=18><b>{tutorial.Title}</b></size></color>\n"; // 教程标题
+            content += $"<i>{tutorial.Description}</i>\n"; // 教程描述
             foreach (var paragraph in tutorial.Paragraphs)
             {
-                content += $"\n{paragraph}\n";
+                content += $"\n{paragraph}\n"; // 教程段落
             }
 
             return content;
@@ -414,7 +414,7 @@ namespace Gyvr.Mythril2D
 
             GUILayout.Space(10);
 
-
+            // 显示选项卡，可以选择不同的教程
             m_selectedTab = GUILayout.SelectionGrid(m_selectedTab,
                 m_tutorials.Select(tutorial => tutorial.Title).ToArray(), 6);
 
@@ -426,6 +426,7 @@ namespace Gyvr.Mythril2D
                 style.stretchWidth = true;
                 style.stretchHeight = true;
                 style.normal = style.active;
+                // 显示选中教程的内容
                 GUILayout.Label(GetFormattedTutorialContent(m_selectedTab), new GUIStyle(style)
                 {
                     richText = true,

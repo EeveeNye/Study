@@ -1,12 +1,15 @@
 ﻿using System;
 using UnityEditor;
+using UnityEngine;
 
 namespace Gyvr.Mythril2D
 {
     // TODO: Remove, not necessary anymore
+    // TODO: 移除，不再需要
     [CustomEditor(typeof(AbilitySheet), true)]
     public class AbilitySheetEditor : Editor
     {
+        // 显示消息框
         private void ShowMessage(MessageType type, string message, params object[] args)
         {
             EditorGUILayout.Space();
@@ -14,8 +17,11 @@ namespace Gyvr.Mythril2D
         }
 
         private void ShowError(string message, params object[] args) => ShowMessage(MessageType.Error, message, args);
-        private void ShowWarning(string message, params object[] args) => ShowMessage(MessageType.Warning, message, args);
 
+        private void ShowWarning(string message, params object[] args) =>
+            ShowMessage(MessageType.Warning, message, args);
+
+        // 查找泛型基类模板参数的类型
         static Type FindGenericBaseTemplateParameter(Type type, Type genericBase)
         {
             if (type.IsGenericType && type.GetGenericTypeDefinition() == genericBase.GetGenericTypeDefinition())
@@ -37,32 +43,35 @@ namespace Gyvr.Mythril2D
             base.OnInspectorGUI();
 
             AbilitySheet abilitySheet = target as AbilitySheet;
-
             if (abilitySheet.prefab)
             {
                 var abilityBase = abilitySheet.prefab.GetComponent<AbilityBase>();
 
                 if (abilityBase == null)
                 {
-                    ShowError("The provided ability prefab must have a component of type {0} attached to its root!", nameof(AbilityBase));
+                    // 显示错误消息，要求预制体的根节点上必须附加一个名为"AbilityBase"的组件
+                    ShowError("提供的能力预制体必须附加一个名为 {0} 的组件到其根节点上！", nameof(AbilityBase));
                 }
                 else
                 {
                     Type abilitySheetType = abilitySheet.GetType();
-                    Type abilityExpectedSheetType = FindGenericBaseTemplateParameter(abilityBase.GetType(), typeof(Ability<>));
+                    Type abilityExpectedSheetType =
+                        FindGenericBaseTemplateParameter(abilityBase.GetType(), typeof(Ability<>));
 
                     if (abilitySheetType != abilityExpectedSheetType)
                     {
                         if (abilitySheetType.IsSubclassOf(abilityExpectedSheetType))
                         {
-                            ShowWarning("{0} is overkill for \"{1}\". Some settings from this sheet may not be used. Consider using a sheet of type {2} instead.",
+                            // 显示警告消息，表明AbilitySheet对于该预制体来说过于冗余，建议使用另一个类型的数据表
+                            ShowWarning("{0} 对于 \"{1}\" 来说过于冗余。该数据表中的某些设置可能不会被使用。考虑使用类型为 {2} 的数据表。",
                                 abilitySheetType.Name,
                                 abilitySheet.prefab.name,
                                 abilityExpectedSheetType.Name);
                         }
                         else
                         {
-                            ShowError("\"{0}\" is incompatible with {1}. A ScriptableObject of type {2} is required to work with this prefab.",
+                            // 显示错误消息，指示AbilitySheet与预制体不兼容，并提供适当的类型建议
+                            ShowError("\"{0}\" 与 {1} 不兼容。需要一个类型为 {2} 的 ScriptableObject 与该预制体一起工作。",
                                 abilitySheet.prefab.name,
                                 abilitySheetType.Name,
                                 abilityExpectedSheetType.Name);
