@@ -18,12 +18,12 @@ MonoBehaviour:
   - "\u4F46\u4E00\u7FA4\u90AA\u6076\u7684\u9AB7\u9AC5\u4ECE\u5979\u6BEB\u65E0\u751F\u547D\u7684\u8EAB\u4F53\u91CC\u5077\u8D70\u4E86\u5B83\u3002\u6211\u8981\u4ECE\u4ED6\u4EEC\u90A3\u91CC\u62FF\u56DE\u6765\u3002"
   - "\u4F60\u80FD\u5E2E\u6211\u633D\u6551\u6211\u6BCD\u4EB2\u7684\u9057\u4EA7\u5417\uFF1F"
   options:
-  - name: I will!
+  - name: "\u8FD9\u5C31\u505A!"
     sequence: {fileID: 11400000, guid: 94df3924659fa88428db599e01765b73, type: 2}
     message:
       type: 2
       customMessage: 
-  - name: No sorry
+  - name: "\u4E0D\uFF0C\u5BF9\u4E0D\u8D77\u3002"
     sequence: {fileID: 11400000, guid: 823dbff665f38c243a5b06499e8715a9, type: 2}
     message:
       type: 3

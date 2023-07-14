@@ -17,12 +17,12 @@ MonoBehaviour:
   - "\u6211\u7684\u51E0\u4E2A\u540C\u80DE\u62A5\u544A\u8BF4\u906D\u5230\u4E86\u6B7B\u7075\u6CD5\u5E08\u7684\u88AD\u51FB\u3002"
   - "\u4F60\u80FD\u8BA9\u6211\u4EEC\u7684\u571F\u5730\u6446\u8131\u8FD9\u79CD\u90AA\u6076\u5417\uFF1F"
   options:
-  - name: For sure!
+  - name: "\u5F53\u7136\u4E86!"
     sequence: {fileID: 11400000, guid: 9112a65fd70642547b05826d46b36db4, type: 2}
     message:
       type: 2
       customMessage: 
-  - name: Not today
+  - name: "\u4ECA\u5929\u4E0D\u884C"
     sequence: {fileID: 11400000, guid: 7f6ad1c0d491738418d1763f8cd5824d, type: 2}
     message:
       type: 3

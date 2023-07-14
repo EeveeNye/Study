@@ -39,7 +39,7 @@ namespace Gyvr.Mythril2D
             (typeof(Inn), "客栈"),
             (typeof(Quest), "任务"),
             (typeof(DialogueSequence), "对话序列"),
-            (typeof(ScriptableAction), "脚本动作"),
+            (typeof(ScriptableAction), "脚本事件"),
             (typeof(AudioClipResolver), "音频列表"),
             (typeof(SaveFile), "存档文件"),
             (typeof(NavigationCursorStyle), "导航光标样式"),

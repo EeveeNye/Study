@@ -1,3 +1,4 @@
+using Sirenix.OdinInspector;
 using UnityEngine;
 
 namespace Gyvr.Mythril2D
@@ -40,8 +41,8 @@ namespace Gyvr.Mythril2D
     [CreateAssetMenu(menuName = AssetMenuIndexer.Mythril2D_Quests_Tasks + nameof(KillMonsterTask))]
     public class KillMonsterTask : QuestTask
     {
-        public MonsterSheet monster = null;
-        public int monstersToKill = 1;
+        [LabelText("需要击杀的怪物")] public MonsterSheet monster = null;
+        [LabelText("需要击杀的怪物数量")] public int monstersToKill = 1;
 
         public KillMonsterTask()
         {
@@ -57,7 +58,8 @@ namespace Gyvr.Mythril2D
 
         public override string GetTitle(QuestTaskProgress progress)
         {
-            return StringFormatter.Format(m_title, monster.displayName, ((KillMonsterTaskProgress)progress).monstersKilled, monstersToKill);
+            return StringFormatter.Format(m_title, monster.displayName,
+                ((KillMonsterTaskProgress)progress).monstersKilled, monstersToKill);
         }
     }
 }

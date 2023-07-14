@@ -15,17 +15,17 @@ MonoBehaviour:
   lines:
   - "\u56FD\u738B\u8981\u4EA4\u7A0E\u5417\uFF1F\u6211\u6CA1\u6709\u94B1\uFF0C\u4ECA\u5E74\u6211\u4EC0\u4E48\u90FD\u6CA1\u5356\uFF0C\u592A\u8352\u8C2C\u4E86\uFF01"
   options:
-  - name: Cut his beard
+  - name: "\u526A\u6389\u4ED6\u7684\u80E1\u5B50"
     sequence: {fileID: 11400000, guid: a265722d17b70f24f846e199a53e2451, type: 2}
     message:
       type: 0
       customMessage: 
-  - name: Burn his beard
+  - name: "\u70E7\u6389\u4ED6\u7684\u80E1\u5B50"
     sequence: {fileID: 11400000, guid: 13e7a38c58042184ca6f9c7780ed9775, type: 2}
     message:
       type: 0
       customMessage: 
-  - name: Spare the guy
+  - name: "\u9976\u4E86\u90A3\u5BB6\u4F19\u5427"
     sequence: {fileID: 11400000, guid: af04556a9b2192645ad180e00c0cf57b, type: 2}
     message:
       type: 0

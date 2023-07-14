@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using Sirenix.OdinInspector;
+using UnityEngine;
 
 namespace Gyvr.Mythril2D
 {
@@ -47,8 +48,8 @@ namespace Gyvr.Mythril2D
     [CreateAssetMenu(menuName = AssetMenuIndexer.Mythril2D_Quests_Tasks + nameof(ItemTask))]
     public class ItemTask : QuestTask
     {
-        public Item item = null;
-        public int amountToCollect = 1;
+        [LabelText("物品")] public Item item = null;
+        [LabelText("要收取的数量")] public int amountToCollect = 1;
 
         public ItemTask()
         {
@@ -64,7 +65,8 @@ namespace Gyvr.Mythril2D
 
         public override string GetTitle(QuestTaskProgress progress)
         {
-            return StringFormatter.Format(m_title, item.displayName, ((ItemTaskProgress)progress).currentQuantity, amountToCollect);
+            return StringFormatter.Format(m_title, item.displayName, ((ItemTaskProgress)progress).currentQuantity,
+                amountToCollect);
         }
     }
 }

@@ -4,21 +4,23 @@ namespace Gyvr.Mythril2D
 {
     public class AudioRegion : MonoBehaviour
     {
-        [Header("Settings")]
-        [SerializeField] protected AudioClipResolver m_audioClipResolver = null;
+        [Header("Settings")] [SerializeField] protected AudioClipResolver m_audioClipResolver = null;
 
         private AudioClipResolver m_previousAudio = null;
 
         public bool IsPlayer(Collider2D collision)
         {
-            return collision.gameObject == GameManager.Player.gameObject;
+            if (collision.gameObject != null && GameManager.Player != null && GameManager.Player.gameObject != null)
+                return collision.gameObject == GameManager.Player.gameObject;
+            return false;
         }
 
         private void OnTriggerEnter2D(Collider2D collision)
         {
             if (IsPlayer(collision))
             {
-                m_previousAudio = GameManager.AudioSystem.GetLastPlayedAudioClipResolver(m_audioClipResolver.targetChannel);
+                m_previousAudio =
+                    GameManager.AudioSystem.GetLastPlayedAudioClipResolver(m_audioClipResolver.targetChannel);
                 GameManager.NotificationSystem.audioPlaybackRequested.Invoke(m_audioClipResolver);
             }
         }

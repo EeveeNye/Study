@@ -16,7 +16,7 @@ namespace Gyvr.Mythril2D
         private int m_recommendedLevel = 1;
 
         [SerializeField] [LabelText("可重复")] private bool m_repeatable = false;
-        [SerializeField] [LabelText("任务任务")] private QuestTask[] m_tasks = null;
+        [SerializeField] [LabelText("任务")] private QuestTask[] m_tasks = null;
 
         [Header("任务完成")] [SerializeField] [LabelText("完成后执行")]
         private ActionHandler[] m_toExecuteOnQuestCompletion = null;
